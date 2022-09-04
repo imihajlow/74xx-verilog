@@ -1,0 +1,11 @@
+test/*
+!test/*.v
+!test/*.sh
+!test/Makefile
+*.hex
+*.vcd
+*.mem
+*.bak
+*-bak
+*.bck
+_autosave*
