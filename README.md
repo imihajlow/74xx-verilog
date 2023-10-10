@@ -16,4 +16,5 @@ Implemented models:
 * 74hc280
 * 74hc273
 * 74hc153
-
+* 74hc164
+* 74hc4040

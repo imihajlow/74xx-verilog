@@ -1,7 +1,7 @@
 .PHONY: all clean
 
 
-all: test_74153 test_7474 test_74151 test_74193 test_74151 test_74164
+all: test_74153 test_7474 test_74151 test_74193 test_74151 test_74164 test_744040
 
 clean:
 	rm -f ./test_7474 ./test_74153 ./test_74193 ./test_74151
@@ -26,3 +26,7 @@ test_74193: test_74193.v ../counter_74193.v
 test_74164: test_74164.v ../shift_74164.v
 	iverilog -o $@ $^
 	./verilog-verify.sh ./test_74164
+
+test_744040: test_744040.v ../counter_744040.v
+	iverilog -o $@ $^
+	./verilog-verify.sh ./test_744040
